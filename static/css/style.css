@@ -268,7 +268,7 @@ body {
   background-color: #ccc;
   border-radius: 4px;
   overflow: hidden;
-  bottom: 40px;
+  bottom: 180px;
   margin: 0px auto;
   width: 10%; /* Adjust the width as needed */
 }
@@ -2039,7 +2039,16 @@ body {
     flex-direction: column;
     gap: 50px;
   }
-
+  .carousel-progress {
+    position: relative !important;
+    height: 10px !important;
+    background-color: #ccc !important;
+    border-radius: 4px !important;
+    overflow: hidden !important;
+    bottom: 180px !important;
+    margin: 0 auto !important;
+    width: 10% !important;
+  }
   #navbar .search-bar {
     display: flex;
     padding: 10px 10px;
@@ -2049,7 +2058,6 @@ body {
   }
   #spotlight .spotlight-text .spot-offer-text {
     display: flex;
-
     align-items: center;
     padding-top: 130px;
   }
@@ -2075,14 +2083,51 @@ body {
   #productoffer .offercards .offercard-right {
     width: 100%;
   }
+  #womens-products .wrapper .products-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1px;
+    padding-top: 50px;
+  }
+  #products .wrapper .products-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  #lime-light .wrapper .light-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding-top: 50px;
+  }
+  #feedback .wrapper .feedback-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 70px;
 }
-@media (max-width: 1280px) {
+}
+
+
+@media (min-width: 1110px) and (max-width: 1280px) {
   #navbar .search-bar .input {
     background-color: #f6f6f6;
     display: flex;
     font-size: 15px;
     border: none;
     align-items: center;
+  }
+  #spotlight .spotlight-slider .spotlight-card {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 0px;
+    flex-shrink: 0;
+    background-position-x: -166px;
   }
   #product-description .wrapper .product-description-right {
     width: 100%;
@@ -2116,6 +2161,14 @@ body {
     padding-top: 20px;
     gap: 38.58px;
   }
+  #lime-light .wrapper .light-content {
+    width: 65%;
+    margin-left: 214px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+  }
 
   #new-arrival .arrival-content {
     display: flex;
@@ -2129,17 +2182,80 @@ body {
     margin-right: 0px;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
+  #spotlight .spotlight-slider .spotlight-card{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -130px;
+    flex-shrink: 0;
+    background-position-x: -200px;
+  }
+  #carousel-progress {
+    position: relative;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    bottom: 250px;
+    margin: 0px auto;
+    width: 10%;
+  }
+  #womens-products .wrapper .products-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1px;
+    padding-top: 50px;
+    margin-left: 180px;
+    margin-right: 100px;
+  }
+  #advertisement .wrapper .advertisement-content {
+    display: flex;
+    justify-content: center;
+    height: 627.72px;
+    width: 1145px;
+  }
   #advertisement .advertisement-content .advertisement-img1 {
     background-image: url(image/bg-4.jpg);
-    height: 539.72px;
-    width: 504px;
     background-repeat: no-repeat;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 27px;
+    height: 500.72px;
+    width: 460px;
   }
+
+  #advertisement .advertisement-content .advertisement-img2 {
+    background-image: url("/static/image/bg-5.jpg");
+    background-repeat: no-repeat;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 27px;
+    height: 500.72px;
+    width: 460px;
+  }
+
+  /* .products-card-content {
+    margin-right: 180px;
+  } */
+ 
+  #products .wrapper .products-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+  div.products-card-content:nth-child(8){
+    margin-right: 200px;
+  }
+
+  div.products-card-content:nth-child(7) {
+    /* margin-left: 200px; */
+  }
+
   .wrapper .advertisement-img1 .advertisement-card-subhead {
     font-size: 24px;
     font-family: sans-serif;
     font-weight: 600;
-    color: #ffffff;
+    color: #ffffff; 
     line-height: 40px;
     letter-spacing: 0.21px;
     display: flex;
@@ -2191,6 +2307,11 @@ body {
     border-radius: 12px;
     border: 1.07px;
   }
+  #wrapper .products-content .products-image {
+    width: 240.36px;
+    height: 393.26px;
+    border-radius: 10px;
+  }
   #advertisement .advertisement-content .advertisement-img1 {
     background-image: url(image/bg-4.jpg);
     background-repeat: no-repeat;
@@ -2218,8 +2339,20 @@ body {
     gap: 10px;
     padding-top: 40px;
   }
+  #lime-light .wrapper .light-content {
+    width: 60%;
+    margin-left: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2px;
+    padding-top: 38px;
+  }
+  .wrapper .light-content .light-image {
+    width: 300px;
+  }
 }
-@media (max-width: 1110px) {
+@media (min-width: 960px) and (max-width: 1110px) {
   #single-page .wrapper {
     flex-direction: column;
   }
@@ -2274,10 +2407,38 @@ body {
     letter-spacing: 0.16px;
     font-weight: 300px;
   }
-  #navbar .nav-menu .combos {
-    display: none;
+  #spotlight .spotlight-slider .spotlight-card {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -100px;
+    flex-shrink: 0;
+    background-position-x: -450px;
   }
-
+  .carousel-progress {
+    position: relative;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    bottom: 201px;
+    margin: 0px auto;
+    width: 10%;
+  }
+  #advertisement .advertisement-content .advertisement-img2 {
+    background-image: url("/static/image/bg-5.jpg");
+    background-repeat: no-repeat;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 35px;
+    height: 638px;
+    width: 500px;
+  }
+  #advertisement .wrapper .advertisement-content {
+    display: flex;
+    justify-content: center;
+    height: 627.72px;
+    width: 925px;
+  }
   .brand-card .brandcard-content .brands-logos {
     display: flex;
     justify-content: center;
@@ -2293,6 +2454,15 @@ body {
     height: 75.55px;
     border-radius: 12px;
     background-color: #ffffff;
+  }
+  #womens-products .wrapper .products-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: -1px;
+    padding-top: 50px;
+    margin-left: 183px;
+    margin-right: 103px;
   }
   #brands .brand-card .brandcard-content .brand-head {
     padding-top: 23.84px;
@@ -2310,8 +2480,11 @@ body {
     border: none;
     align-items: center;
   }
+  .wrapper .light-content .light-image {
+    width: 270px;
+  }
 }
-@media (max-width: 960px) {
+@media (min-width: 868px) and (max-width: 960px) {
   #spotlight
     .spotlight-slider
     .spotlight-card
@@ -2404,7 +2577,7 @@ body {
     margin-bottom: 10px;
   }
 }
-@media (max-width: 868px) {
+@media (min-width: 768px) and (max-width: 868px) {
   #navbar .search-bar .input {
     display: flex;
   }
@@ -2449,9 +2622,29 @@ body {
   #dropdownMenu.show {
     overflow: scroll;
   }
+  #brand-card .brandcard-content .brands-logos {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    padding-top: 7.4px !important;
+    gap: 15.5px !important;
+    margin-left: 45px !important;
+  }
+  .advertisement-img1 .adv-paragraph {
+    font-size: 12px;
+    font-weight: 300;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: #ffffff;
+    line-height: 24px;
+    letter-spacing: 1px;
+    width: 326px;
+    padding-top: 30px;
+    padding-left: 66px;
+  }
+
+
 }
 
-@media (max-width: 768px) {
+@media (min-width: 640px) and (max-width: 768px) {
   #footer .wrapper .footer-top {
     display: flex;
     flex-wrap: wrap;
@@ -2461,8 +2654,16 @@ body {
   #advertisement .advertisement-content .advertisement-img1 {
     background-image: url(image/bg-4.jpg);
     height: 539.72px;
-    width: 304px;
+    width: 325px;
     background-repeat: no-repeat;
+  }
+  .advertisement-img2 {
+    background-image: url("/static/image/bg-5.jpg");
+    height: 539.72px;
+    width: 318px;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: contain;
   }
   #spotlight .spotlight-text .spot-button .shop-now {
     margin-left: 63px;
@@ -2577,6 +2778,20 @@ body {
     border-radius: 12px;
     border: 1.07px;
   }
+  .brand-card .brandcard-content .brands-logos {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10.4px;
+    gap: 15.5px;
+    margin-left: 45px;
+  }
+  #brand-card .brandcard-content .brands-logos {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 12.4px;
+    gap: 15.5px;
+    margin-left: 45px;
+  }
   #single-page .wrapper .single-page-left .single-page-left-img {
     width: 520px;
     height: 620px;
@@ -2593,11 +2808,11 @@ body {
   }
   #spotlight .spotlight-slider .spotlight-card .spotlight-text {
     color: #ffffff;
-    padding: 129px 0 129px 140px;
+    padding: 207px 0 338px 145px;
     width: 55%;
   }
 }
-@media (max-width: 640px) {
+@media (min-width: 540px) and (max-width: 640px) {
   #similar-products .wrapper .similar-products {
     justify-content: center;
   }
@@ -3125,6 +3340,9 @@ body {
   }
 }
 @media (max-width: 360px) {
+  #navbar .nav-menu{
+    display: none;
+  }
   .advertisement-img1 .adv-button {
     padding: 9px 16px 9px 16px;
 
@@ -3148,14 +3366,15 @@ body {
   }
 
   #spotlight .spotlight-slider .spotlight-card .spotlight-text .spotlight-off {
-    font-size: 16px;
+    font-size: 10px;
+    height: 100px;
   }
 
   #spotlight .spotlight-slider .spotlight-card .spotlight-text button {
     font-size: 14px;
     padding: 6px 12px;
+    margin-bottom: 100px; 
   }
-
   #advertisement {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -3174,6 +3393,23 @@ body {
   #spotlight .spotlight-text .summer-valuepack h2 {
     font-size: 35px;
     font-weight: 200;
+  }
+  #spotlight .spotlight-slider .spotlight-card {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -44px;
+    flex-shrink: 0;
+  }
+  .carousel-progress {
+    position: relative !important;
+    height: 10px !important;
+    background-color: #ccc !important;
+    border-radius: 4px !important;
+    overflow: hidden !important;
+    bottom: 100px !important;
+    margin: 0 auto !important;
+    width: 20% !important;
   }
   #lime-light {
     padding-top: 40px;
@@ -3235,5 +3471,8 @@ body {
   }
   .arrival-card-content {
     min-width: 172px;
+  }
+  #new-arrival .arrival-content{
+    gap: 55px   ;
   }
 }
