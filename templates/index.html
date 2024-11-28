@@ -218,7 +218,10 @@
             <h6 class="spotlight-price">T-shirt / Tops</h6>
             <h2 class="spotlight-title">Summer<br>Value Pack</h2>
             <h4 class="spotlight-off">cool / colorful / comfy</h4>
-            <button>Shop Now</button>
+            <a href="{% url 'web:category_detail' category_id=3 %}">
+              <button>Shop Now</button>
+            </a>
+          
           </div>
         </div>
         <div class="spotlight-card bg-2">
@@ -226,7 +229,9 @@
             <h6 class="spotlight-price">T-shirt / Tops</h6>
             <h2 class="spotlight-title">Summer Value Pack</h2>
             <h4 class="spotlight-off">cool / colorful / comfy</h4>
+            <a href="{% url 'web:category_detail' category_id=5 %}">
             <button>Shop Now</button>
+            </a>
           </div>
         </div>
         <div class="spotlight-card bg-3" >
@@ -234,7 +239,9 @@
             <h6 class="spotlight-price">T-shirt / Tops</h6>
             <h2 class="spotlight-title">Summer Value Pack</h2>
             <h4 class="spotlight-off">cool / colorful / comfy</h4>
+            <a href="{% url 'web:category_detail' category_id=7 %}">
             <button>Shop Now</button>
+            </a>
           </div>
         </div>
       </div>
@@ -327,7 +334,9 @@
               In our journey to improve everyday fashion, euphoria presents
               EVERYDAY wear range - Comfortable & Affordable fashion 24/7
             </p>
+            <a href="{% url 'web:category_detail' category_id=8 %}">
             <button class="adv-button">Shop Now</button>
+            </a>
           </div>
           <div class="advertisement-img2">
           
@@ -645,7 +654,7 @@
                   ><img
                     class="facebook"
                     src="{% static 'image/facebook.svg' %}"
-                    alt=""
+                    alt="facebook"
                 /></a>
               </span>
               <span class="logo-whitebg">
@@ -653,7 +662,7 @@
                   ><img
                     class="instagram"
                     src="{% static 'image/instagram.svg' %}"
-                    alt=""
+                    alt="instagram"
                 /></a>
               </span>
               <span class="logo-whitebg">
@@ -661,7 +670,7 @@
                   ><img
                     class="twitter"
                     src="{% static 'image/twitter.svg' %}"
-                    alt=""
+                    alt="twitter"
                 /></a>
               </span>
               <span class="logo-whitebg">
@@ -669,7 +678,7 @@
                   ><img
                     class="linkedin"
                     src="{% static 'image/linkedin.svg' %}"
-                    alt=""
+                    alt="linkedin"
                 /></a>
               </span>
             </div>

@@ -2430,7 +2430,7 @@ body {
     background-repeat: no-repeat;
     border-top-right-radius: 22px;
     border-bottom-right-radius: 35px;
-    height: 638px;
+    height: 500px;
     width: 500px;
   }
   #advertisement .wrapper .advertisement-content {
@@ -3340,6 +3340,10 @@ body {
   }
 }
 @media (max-width: 360px) {
+  .advertisement-img2{
+    display: none;
+  }
+
   #navbar .nav-menu{
     display: none;
   }
@@ -3474,5 +3478,10 @@ body {
   }
   #new-arrival .arrival-content{
     gap: 55px   ;
+  }
+  .brand-card .brandcard-content .brands-logos {
+    padding-top: 1.4px;
+    gap: 5.5px;
+    margin-left: 60px;
   }
 }
